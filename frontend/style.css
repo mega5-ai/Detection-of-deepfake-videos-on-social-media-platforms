@@ -1,0 +1,144 @@
+/* ===============================
+   RESET
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+/* ===============================
+   FULL PAGE BACKGROUND (CLEAR IMAGE)
+================================ */
+body {
+    background: url("aiii.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #020202;
+}
+
+/* ===============================
+   MAIN CONTAINER
+================================ */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px 80px;
+}
+
+/* ===============================
+   HEADER
+================================ */
+h1 {
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 8px;
+    color: #f8f5f5;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fffefe;
+    margin-bottom: 40px;
+}
+
+/* ===============================
+   GLASS SECTIONS (TRANSPARENT)
+================================ */
+.section {
+    background: rgba(255, 255, 255, 0.45);
+    /* 🔑 glass only here */
+    backdrop-filter: blur(14px);
+    border-radius: 20px;
+    padding: 28px;
+    margin-bottom: 35px;
+
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+
+    background: linear-gradient(135deg, #01305a, #01305a);
+    box-shadow: 0 10px 25px rgba(1, 48, 90, 0.35);
+    transition: all 0.25s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(1, 48, 90, 0.45);
+}
+
+button.secondary {
+    background: #6b7280;
+}
+
+/* ===============================
+   RESULT BOX
+================================ */
+.result {
+    margin-top: 15px;
+    padding: 16px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    white-space: pre-line;
+}
+
+/* ===============================
+   VIDEO
+================================ */
+video {
+    width: 100%;
+    max-width: 420px;
+    margin-top: 12px;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* ===============================
+   FOOTER
+================================ */
+.footer {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 14px;
+    font-weight: 900;
+    color: #fffafae4;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .container {
+        padding: 40px 15px 60px;
+    }
+}

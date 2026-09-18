@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Deepfake Detection</title>
+
+    <!-- Mobile + Camera support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Deepfake Detection System</h1>
+        <p class="subtitle">AI-powered video authenticity verification</p>
+
+        <!-- ================= Upload Section ================= -->
+        <div class="section">
+            <h2>Upload Video</h2>
+
+            <input type="file" id="uploadVideo" accept="video/*">
+
+            <button onclick="uploadVideo()">📤 Check Video</button>
+
+            <div id="uploadResult" class="result info">
+                No video analyzed yet
+            </div>
+        </div>
+
+        <!-- ================= Record Section ================= -->
+        <div class="section">
+            <h2>Live Record Video</h2>
+
+            <video id="preview" autoplay muted playsinline></video>
+
+            <br>
+
+            <button id="startBtn" onclick="startRecording()">⏺ Start Recording</button>
+            <button id="stopBtn" class="secondary" onclick="stopRecording()" disabled>⏹ Stop Recording</button>
+
+            <div id="recordStatus" class="result info">
+                Waiting for recording…
+            </div>
+
+            <div id="recordResult" class="result info">
+                No recording analyzed yet
+            </div>
+        </div>
+
+        <!-- ================= Telegram Section ================= -->
+        <div class="section">
+            <h2>Telegram Bot</h2>
+
+            <button class="telegram-btn" onclick="openTelegram()">🤖 Check using Telegram</button>
+
+            <div id="botText" class="result info">
+                Open the bot to send a video
+            </div>
+        </div>
+
+        <div class="footer">
+            © 2025–2026 Deepfake Detection | B.Tech AI & DS
+        </div>
+
+    </div>
+    <section class="hero">
+        <div class="hero-content">
+            <!-- text here -->
+        </div>
+
+        <div class="hero-image"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
